@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "animalshelter_backend": {
+      "main": "src/animalshelter_backend/main.mo",
+      "type": "motoko"
+    },
+    "animalshelter_frontend": {
+      "dependencies": [
+        "animalshelter_backend"
+      ],
+      "source": [
+        "src/animalshelter_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
